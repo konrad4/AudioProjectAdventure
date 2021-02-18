@@ -1,68 +1,48 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class PlayerAudio : MonoBehaviour
 {
-    [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private AudioClip metalWalkClip;
-    [SerializeField] private AudioClip carpetWalkClip;
+    [SerializeField] private AudioClip[] metalWalkClips;
+    [SerializeField] private AudioClip[] sandWalkClips;
     [SerializeField] private AudioSource footstepsSource;
-    private string floorType;
-    List <GameObject> currentCollisions = new List <GameObject> ();
-    public bool switchedOn;
-    
+    [SerializeField] private GameObject secondHandGameObject;
+    [SerializeField] private GameObject playerGameObject;
+    private Scene scene;
+
+    private void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
+
     private void Update()
     {
-        if (!agent.isStopped)
+        if ((secondHandGameObject.transform.position - playerGameObject.gameObject.transform.position).sqrMagnitude < 50f)
         {
-            if (floorType == "Metal")
-            {
-                PlayAudio(metalWalkClip);
-            }
-            else
-            {
-                Debug.Log("DU");
-                PlayAudio(carpetWalkClip);
-            }    
+            Debug.Log("jest");
         }
-        else StopAudio();
-    }
-    
-    private void PlayAudio(AudioClip clipToPlay)
-    {
-        if (!footstepsSource.isPlaying)
+        else
         {
-            footstepsSource.clip = clipToPlay;
-            footstepsSource.Play(); 
+            Debug.Log("nie ma");
         }
-
     }
 
-    private void StopAudio()
+    private void PlayRandomSound(AudioClip[] clips)
     {
-        if (footstepsSource.isPlaying)
+        var soundIndex = UnityEngine.Random.Range(0, clips.Length);
+        footstepsSource.PlayOneShot(clips[soundIndex]);
+    }
+
+    private void Step()
+    {
+        if (scene.name == "SecurityRoom")
         {
-            footstepsSource.Stop();
-        } 
-
-    }
-
-    private void SetFloorType(string typeOfFloor)
-    {
-        floorType = typeOfFloor;
-    }
-    
-    private void OnCollisionEnter(Collision other)
-    {
-        currentCollisions.Add (other.gameObject);
-
-        foreach (GameObject gObject in currentCollisions)
+            PlayRandomSound(metalWalkClips);
+        }
+        else
         {
-            if (gObject.CompareTag("Carpet")) SetFloorType("Carpet");
-            else SetFloorType("Metal");
+            PlayRandomSound(sandWalkClips);
         }
     }
 }
