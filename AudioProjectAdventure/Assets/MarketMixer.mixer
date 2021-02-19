@@ -9,7 +9,9 @@ AudioMixerSnapshotController:
   m_Name: Zone2
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: bc01a2cdc2b487341a7a11572563504c
-  m_FloatValues: {}
+  m_FloatValues:
+    b7066ab4a0fdc7e4bb1da9977db95c2d: 1.7477665
+    6d72d38f0a38fc0418150817aaa5cec8: -2.5738313
   m_TransitionOverrides: {}
 --- !u!243 &-3677772420278705263
 AudioMixerGroupController:
@@ -121,6 +123,7 @@ AudioMixerSnapshotController:
   m_SnapshotID: 6beeb4796667bea4b97057ff96c8e2c5
   m_FloatValues:
     b7066ab4a0fdc7e4bb1da9977db95c2d: -9.833286
+    6d72d38f0a38fc0418150817aaa5cec8: -2.5738313
   m_TransitionOverrides: {}
 --- !u!244 &2632095291542417947
 AudioMixerEffectController:
