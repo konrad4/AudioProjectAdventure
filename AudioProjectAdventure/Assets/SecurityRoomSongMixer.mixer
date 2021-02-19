@@ -7,7 +7,7 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SecurityRoomSongMixer
-  m_OutputGroup: {fileID: -4886863394305618002, guid: 15fc644806ffd614e924984565b63e5a,
+  m_OutputGroup: {fileID: 5257985569154825557, guid: 2d5e9015fc8b2b24a82f0da92e44fdf5,
     type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -16,7 +16,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 33d66969ccbf26c439d7cf1decb8245a
+    name: MyExposedParam
   m_AudioMixerGroupViews:
   - guids:
     - 7fc02c2beae4ee74683e8192e5ef2de4

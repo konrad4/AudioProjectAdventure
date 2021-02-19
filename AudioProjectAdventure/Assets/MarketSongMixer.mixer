@@ -7,7 +7,7 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MarketSongMixer
-  m_OutputGroup: {fileID: -3677772420278705263, guid: 0250ba701a55cdc43b4d576bc5cfbbf9,
+  m_OutputGroup: {fileID: -209518002569111878, guid: 2d5e9015fc8b2b24a82f0da92e44fdf5,
     type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
