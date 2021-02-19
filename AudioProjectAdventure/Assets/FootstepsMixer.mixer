@@ -7,7 +7,8 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FootstepsMixer
-  m_OutputGroup: {fileID: 24300002, guid: 829af0f1bbf7f164f8f30b4f528b24cf, type: 2}
+  m_OutputGroup: {fileID: -1015890483254772220, guid: 829af0f1bbf7f164f8f30b4f528b24cf,
+    type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
