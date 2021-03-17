@@ -1032,13 +1032,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8260042, guid: 0036c73aed31ec14fbbf45853c79fc14, type: 3}
+      propertyPath: m_Volume
+      value: 0.118
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260042, guid: 0036c73aed31ec14fbbf45853c79fc14, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: b1b053e37f70fc943959b401d7f11764, type: 3}
     - target: {fileID: 8260042, guid: 0036c73aed31ec14fbbf45853c79fc14, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 24300002, guid: ea005c5d970bf8b48bbd0812b2066eb9,
+      objectReference: {fileID: 2370326433479748010, guid: e9861b1552aa81248bf85ad0c7d5e30b,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0036c73aed31ec14fbbf45853c79fc14, type: 3}
@@ -1447,6 +1451,12 @@ PrefabInstance:
       propertyPath: metalWalkClips.Array.data[6]
       value: 
       objectReference: {fileID: 8300000, guid: d9f1ad6f49f3d494bb0bc816b0295a44, type: 3}
+    - target: {fileID: 2422030207785688917, guid: ab5f05eb414b65f4f9c285f785c1dfad,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 5962526285065035732, guid: e9861b1552aa81248bf85ad0c7d5e30b,
+        type: 2}
     - target: {fileID: 2995464898760516894, guid: ab5f05eb414b65f4f9c285f785c1dfad,
         type: 3}
       propertyPath: m_RootOrder
@@ -1638,7 +1648,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 2
+  serializedVersion: 3
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 0
@@ -1677,7 +1687,7 @@ LightingSettings:
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
-  m_PVRRussianRouletteStartBounce: 2
+  m_PVRMinBounces: 1
   m_PVREnvironmentMIS: 0
   m_PVRFilteringMode: 2
   m_PVRDenoiserTypeDirect: 0
@@ -1975,11 +1985,11 @@ AudioSource:
   m_GameObject: {fileID: 1344544345}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: dd67433cca94e8247868c5d6dfd3dffd,
+  OutputAudioMixerGroup: {fileID: 2370326433479748010, guid: e9861b1552aa81248bf85ad0c7d5e30b,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.574
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2611,7 +2621,7 @@ AudioSource:
   m_GameObject: {fileID: 1970074507}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 3adce3b950a61b045bf1742bfe9712b7,
+  OutputAudioMixerGroup: {fileID: 2370326433479748010, guid: e9861b1552aa81248bf85ad0c7d5e30b,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
@@ -2774,11 +2784,11 @@ AudioSource:
   m_GameObject: {fileID: 2145506611}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 201d13812be6a1b4681ad4ff2578180f,
+  OutputAudioMixerGroup: {fileID: 2370326433479748010, guid: e9861b1552aa81248bf85ad0c7d5e30b,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.782
   m_Pitch: 1
   Loop: 0
   Mute: 0
